@@ -1,3 +1,8 @@
+## build
+```
+deno bundle src/main.ts dist/main.js
+```
+
 ## APIs
 ### findAll
   - input
