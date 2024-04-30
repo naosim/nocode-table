@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Table",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "テーブル名": {"type":"string"},
+      "親テーブル名": {"type":"string"},
+      "カラム": {
+        "type":"array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "カラム名": {"type": "string"},
+            "型": {"type": "string"}
+          },
+          "required": ["カラム名", "型"] 
+        }
+      }
+    },
+    "required": ["テーブル名", "親テーブル名", "カラム"] 
+  }
+}
